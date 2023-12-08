@@ -98,6 +98,7 @@ def get_book():
 			breed = parts[-2] if len(parts) > 2 else "Unknown"
 			return image_url, breed
 		else:
+
 			return None, "No image URL found"
 	except requests.RequestException as e:
 		return None, f"An error occurred: {e}"
